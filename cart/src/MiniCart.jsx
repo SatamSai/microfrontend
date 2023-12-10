@@ -9,7 +9,7 @@ export default function MiniCart() {
     const loggedIn = useLoggedIn();
     useEffect(() => {
         setItems(cart.value?.cartItems);
-        return cart.subscribe(cart => setItems(cart?.cartItems))
+        cart.subscribe(cart => setItems(cart?.cartItems))
     }, [])
 
     return (

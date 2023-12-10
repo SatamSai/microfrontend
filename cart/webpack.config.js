@@ -47,11 +47,13 @@ module.exports = (_, argv) => ({
         home:"host@http://localhost:3000/remoteEntry.js",
         pdp:"pop@http://localhost:3001/remoteEntry.js",
         cart:"cart@http://localhost:3002/remoteEntry.js",  
+        addtocart:"addtocart@http://localhost:3003/remoteEntry.js",  
       },
       exposes: {
         "./cart":"./src/cart.js",
         "./Login":"./src/Login.jsx",
-        "./MiniCart":"./src/MiniCart.jsx"
+        "./MiniCart":"./src/MiniCart.jsx",
+        "./CartContent":"./src/CartContent.jsx"
       },
       shared: {
         ...deps,

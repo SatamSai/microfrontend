@@ -16,7 +16,7 @@ export default function Login() {
             {showLogin && (
                 <div
                     className="absolute p-5 border-4 border-blue-800 bg-white rounded-lg text-black"
-                    style={{ width: 300, top: "3.3rem" }}
+                    style={{ width: 300, top: "3.3rem", left: -185 }}
                 >
                     <input
                         className="border text-sm border-gray-400 p-2 rounded-md w-full mt-2"

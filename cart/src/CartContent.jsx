@@ -4,9 +4,9 @@ import { currency } from "home/products";
 
 export default function CartContent() {
     const [items, setItems] = useState([])
-    useEffect(
-        () => cart.subscribe((value) => setItems(value?.cartItems ?? [])), []
-    )
+    useEffect(() => {
+        cart.subscribe((value) => setItems(value?.cartItems ?? []))
+    }, [])
     return (
         <>
             <div className="my-10 grid grid-cols-4 gap-5">

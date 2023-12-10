@@ -7,7 +7,6 @@ import "./index.scss";
 import Header from "home/Header"
 import Footer from "home/Footer";
 import PdpContent from "./PdpContent";
-import Safe from "./Safe";
 
 // lazy loading
 // const App = () => {
