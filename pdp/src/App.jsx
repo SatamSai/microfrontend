@@ -33,13 +33,22 @@ const App = () => {
       <div className="text-3xl mx-auto max-w-6xl">
         <Header />
         <div className="my-10">
+          {/* Wrap your Route inside the Routes component */}
           <Routes>
-            <Route path="/product/:id" component={PdpContent} />
+            <Route path="/product/:id" element={<PdpContent />} />
           </Routes>
         </div>
         <Footer />
       </div>
     </Router>
+
+    // <div className="text-3xl mx-auto max-w-6xl">
+    //   <Header />
+    //   <div className="my-10">
+    //     <PdpContent />
+    //   </div>
+    //   <Footer />
+    // </div>
   );
 }
 ReactDOM.render(<App />, document.getElementById("app"));
